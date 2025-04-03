@@ -6,6 +6,9 @@
     <title>Nitro Wong | F&B Executive</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
     <style>
         :root {
             --primary: #722F37;
@@ -746,7 +749,7 @@
             <h2 class="section-title">Professional Summary</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Seasoned hospitality executive with 25+ years of experience in luxury dining and hotel operations across Greater China. Currently Vice President at Goodlins Group, overseeing seven Michelin-acclaimed restaurants and leading strategy, branding, and operations.</p>
+                    <p>Seasoned hospitality executive with 25+ years of experience rising through the ranks in luxury dining and hotel operations across Greater China. Currently Vice President at Goodlins Group, overseeing seven Michelin-acclaimed restaurants and leading strategy, branding, and operations.</p>
                     <p>Known for cross-functional leadership, deep expertise in Chinese fine dining, and a balanced, hands-on approach to driving growth and excellence. My expertise combines culinary knowledge with strategic business acumen to develop innovative F&B concepts, streamline operations, and drive revenue growth.</p>
                     <p>My goal is to improve profitability, develop talents, and enhance products and services while delivering exceptional guest experiences that blend tradition with innovation.</p>
                 </div>
@@ -882,7 +885,7 @@
 <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.3rem;">Education</h3>
 
 <div class="card" style="margin-bottom: 20px;">
-    <div class="card-title">Executive Master of Business Administration (EMBA)</div>
+    <div class="card-title">Executive Master of Business Administration</div>
     <div class="card-subtitle">National Taiwan Normal University</div>
     <div class="card-meta">
         <span>Graduated 2024</span>
@@ -890,7 +893,7 @@
 </div>
 
 <div class="card">
-    <div class="card-title">Bachelor of Business Administration (BBA)</div>
+    <div class="card-title">Bachelor of Business Administration</div>
     <div class="card-subtitle">Queen’s University of Brighton</div>
     <div class="card-meta">
         <span>Graduated 2009</span>
@@ -1050,59 +1053,91 @@
             </div>
         </section>
 
-        <!-- Download Section -->
-        <section id="download" class="section">
-            <h2 class="section-title">Download My CV</h2>
-            <div class="download-container">
-                <div class="download-description">
-                    <p>Thank you for your interest in my professional background. Below you'll find downloadable versions of my CV in different formats. Feel free to download the one that best suits your needs.</p>
+<!-- Download Section -->
+<section id="download" class="section">
+    <h2 class="section-title">Download My CV</h2>
+    <div class="download-container">
+        <div class="download-description">
+            <p>Thank you for your interest in my professional background. Below you'll find downloadable versions of my CV in different formats. Feel free to download the one that best suits your needs.</p>
+        </div>
+        
+        <div class="download-options">
+            <div class="download-card">
+                <div class="download-card-header">
+                    <h3 class="download-card-title">PDF Format</h3>
                 </div>
-                
-                <div class="download-options">
-                    <div class="download-card">
-                        <div class="download-card-header">
-                            <h3 class="download-card-title">PDF Format</h3>
+                <div class="download-card-body">
+                    <div class="file-info">
+                        <div class="file-icon">
+                            <i class="far fa-file-pdf"></i>
                         </div>
-                        <div class="download-card-body">
-                            <div class="file-info">
-                                <div class="file-icon">
-                                    <i class="far fa-file-pdf"></i>
-                                </div>
-                                <div class="file-details">
-                                    <p>Nitro_Wong_CV.pdf</p>
-                                    <p>Size: 215 KB</p>
-                                    <p>Last Updated: April 2025</p>
-                                </div>
-                            </div>
-                            <a href="Nitro_Wong_CV.pdf" download class="download-button">
-                                <i class="fas fa-download"></i> Download PDF
-                            </a>
+                        <div class="file-details">
+                            <p>Nitro_Wong_CV.pdf</p>
+                            <p>Size: 215 KB</p>
+                            <p>Last Updated: April 2025</p>
                         </div>
                     </div>
-                    
-                    <div class="download-card">
-                        <div class="download-card-header">
-                            <h3 class="download-card-title">Word Format</h3>
-                        </div>
-                        <div class="download-card-body">
-                            <div class="file-info">
-                                <div class="file-icon">
-                                    <i class="far fa-file-word"></i>
-                                </div>
-                                <div class="file-details">
-                                    <p>Nitro_Wong_CV.docx</p>
-                                    <p>Size: 189 KB</p>
-                                    <p>Last Updated: April 2025</p>
-                                </div>
-                            </div>
-                            <a href="Nitro_Wong_CV.docx" download class="download-button">
-                                <i class="fas fa-download"></i> Download Word
-                            </a>
-                        </div>
-                    </div>
+                    <a href="Nitro_Wong_CV.pdf" download class="download-button">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
                 </div>
             </div>
-        </section>
+            
+            <div class="download-card">
+                <div class="download-card-header">
+                    <h3 class="download-card-title">Word Format</h3>
+                </div>
+                <div class="download-card-body">
+                    <div class="file-info">
+                        <div class="file-icon">
+                            <i class="far fa-file-word"></i>
+                        </div>
+                        <div class="file-details">
+                            <p>Nitro_Wong_CV.docx</p>
+                            <p>Size: 189 KB</p>
+                            <p>Last Updated: April 2025</p>
+                        </div>
+                    </div>
+                    <a href="Nitro_Wong_CV.docx" download class="download-button">
+                        <i class="fas fa-download"></i> Download Word
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="custom-download-options" style="margin-top: 40px;">
+            <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.3rem;">Create Custom Version</h3>
+            <p>Select which sections to include in your custom PDF:</p>
+            
+            <div class="checkbox-container" style="margin: 20px 0; display: flex; flex-wrap: wrap; gap: 10px;">
+                <label style="margin-right: 15px; display: flex; align-items: center;">
+                    <input type="checkbox" name="sections" value="about" checked style="margin-right: 5px; width: auto;"> 
+                    <span>Professional Summary</span>
+                </label>
+                <label style="margin-right: 15px; display: flex; align-items: center;">
+                    <input type="checkbox" name="sections" value="experience" checked style="margin-right: 5px; width: auto;"> 
+                    <span>Work Experience</span>
+                </label>
+                <label style="margin-right: 15px; display: flex; align-items: center;">
+                    <input type="checkbox" name="sections" value="education" checked style="margin-right: 5px; width: auto;"> 
+                    <span>Education & Certifications</span>
+                </label>
+                <label style="margin-right: 15px; display: flex; align-items: center;">
+                    <input type="checkbox" name="sections" value="skills" checked style="margin-right: 5px; width: auto;"> 
+                    <span>Skills</span>
+                </label>
+                <label style="margin-right: 15px; display: flex; align-items: center;">
+                    <input type="checkbox" name="sections" value="languages" checked style="margin-right: 5px; width: auto;"> 
+                    <span>Languages</span>
+                </label>
+            </div>
+            
+            <button id="generate-pdf" class="download-button">
+                <i class="fas fa-file-pdf"></i> Generate Custom PDF
+            </button>
+        </div>
+    </div>
+</section>
 
         <!-- Contact Section -->
         <section id="contact" class="section">
@@ -1162,6 +1197,504 @@
             });
         });
     </script>
+    
+
+<script>
+    // Tab functionality
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const sections = document.querySelectorAll('.section');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const tabId = button.getAttribute('data-tab');
+            
+            // Update active tab
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            
+            // Show selected section
+            sections.forEach(section => {
+                section.classList.remove('active');
+                if (section.id === tabId) {
+                    section.classList.add('active');
+                }
+            });
+        });
+    });
+
+    // ADD THE NEW PDF GENERATION CODE BELOW
+    document.getElementById('generate-pdf').addEventListener('click', function() {
+    // Get selected sections
+    const selectedSections = Array.from(
+        document.querySelectorAll('input[name="sections"]:checked')
+    ).map(checkbox => checkbox.value);
+    
+    if (selectedSections.length === 0) {
+        alert('Please select at least one section to include in your PDF');
+        return;
+    }
+    
+    // Create a container for the PDF content
+    const pdfContent = document.createElement('div');
+    pdfContent.style.fontFamily = 'Arial, sans-serif';
+    pdfContent.style.fontSize = '10pt';
+pdfContent.style.padding = "0";
+pdfContent.style.marginTop = "-25px";
+    pdfContent.style.lineHeight = '1.3';
+    pdfContent.style.color = '#333333';
+    pdfContent.style.padding = '15px';
+    
+    // Add a header with basic info
+    const headerDiv = document.createElement('div');
+    headerDiv.style.textAlign = "center";
+    headerDiv.style.margin = "0";
+    headerDiv.style.padding = "0";
+    
+    const nameH1 = document.createElement('h1');
+    nameH1.textContent = "NITRO WONG";
+    nameH1.style.fontSize = "18pt";
+    nameH1.style.margin = "0";
+    nameH1.style.color = "#722F37";
+    
+    const titleDiv = document.createElement('div');
+    titleDiv.textContent = "Vice President - Goodlins Group";
+    titleDiv.style.fontSize = "12pt";
+    titleDiv.style.marginBottom = "2px";
+    
+    const taglineDiv = document.createElement('div');
+    taglineDiv.textContent = "Luxury Hospitality & Fine Dining Specialist";
+    taglineDiv.style.fontSize = "10pt";
+    taglineDiv.style.fontStyle = "italic";
+    taglineDiv.style.marginBottom = "5px";
+    
+    const contactDiv = document.createElement('div');
+    contactDiv.innerHTML = "nitro.wong@me.com | +852 9483 5453 / +886 0909 590 581 | Taipei, Taiwan";
+    contactDiv.style.fontSize = "9pt";
+    
+    headerDiv.appendChild(nameH1);
+    headerDiv.appendChild(titleDiv);
+    headerDiv.appendChild(taglineDiv);
+    headerDiv.appendChild(contactDiv);
+    pdfContent.appendChild(headerDiv);
+    
+    // Add horizontal rule
+    const hr = document.createElement('hr');
+    hr.style.margin = "10px 0";
+    hr.style.border = "none";
+    hr.style.borderTop = "1px solid #722F37";
+    pdfContent.appendChild(hr);
+    
+    // Process each selected section
+    selectedSections.forEach(sectionId => {
+        const section = document.getElementById(sectionId);
+        if (!section) return;
+        
+        // Create a new section for the PDF
+        const pdfSection = document.createElement('div');
+        pdfSection.style.marginBottom = "15px";
+        
+        // Add section title
+        const sectionTitle = document.createElement('h2');
+        const originalTitle = section.querySelector('.section-title');
+        sectionTitle.textContent = originalTitle.textContent;
+        sectionTitle.style.fontSize = "12pt";
+        sectionTitle.style.fontWeight = "bold";
+        sectionTitle.style.color = "#722F37";
+        sectionTitle.style.marginBottom = "8px";
+        sectionTitle.style.paddingBottom = "3px";
+        sectionTitle.style.borderBottom = "1px solid #8CA990";
+        pdfSection.appendChild(sectionTitle);
+        
+        // Process section content based on section type
+        switch(sectionId) {
+            case 'about':
+                processAboutSection(section, pdfSection);
+                break;
+            case 'experience':
+                processExperienceSection(section, pdfSection);
+                break;
+            case 'education':
+                processEducationSection(section, pdfSection);
+                break;
+            case 'skills':
+                processSkillsSection(section, pdfSection);
+                break;
+            case 'languages':
+                processLanguagesSection(section, pdfSection);
+                break;
+        }
+        
+        pdfContent.appendChild(pdfSection);
+    });
+    
+    // Generate PDF with optimized settings
+    html2pdf().from(pdfContent)
+        .set({
+            margin: [10, 10, 10, 10],
+            filename: 'Nitro_Wong_CV_Custom.pdf',
+            image: { type: 'jpeg', quality: 0.95 },
+            html2canvas: { scale: 2, logging: false },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        })
+        .save();
+});
+
+// Process About section
+function processAboutSection(originalSection, pdfSection) {
+    const aboutContent = document.createElement('div');
+    aboutContent.style.marginBottom = "10px";
+    
+    // Get summary paragraphs
+    const paragraphs = originalSection.querySelectorAll('.about-text p');
+    paragraphs.forEach(p => {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = p.textContent;
+        paragraph.style.marginBottom = "5px";
+        paragraph.style.fontSize = "9pt";
+        aboutContent.appendChild(paragraph);
+    });
+    
+    // Add core competencies
+    const competenciesTitle = document.createElement('h3');
+    competenciesTitle.textContent = "Core Competencies";
+    competenciesTitle.style.fontSize = "10pt";
+    competenciesTitle.style.fontWeight = "bold";
+    competenciesTitle.style.marginTop = "10px";
+    competenciesTitle.style.marginBottom = "5px";
+    competenciesTitle.style.color = "#722F37";
+    aboutContent.appendChild(competenciesTitle);
+    
+    // Create a compact list of competencies
+    const competenciesList = document.createElement('div');
+    competenciesList.style.columnCount = "2";
+    competenciesList.style.columnGap = "15px";
+    competenciesList.style.fontSize = "9pt";
+    
+    const skillTags = originalSection.querySelectorAll('.skill-tag');
+    skillTags.forEach(tag => {
+        const bullet = document.createElement('div');
+        bullet.style.marginBottom = "3px";
+        bullet.innerHTML = "• " + tag.textContent;
+        competenciesList.appendChild(bullet);
+    });
+    
+    aboutContent.appendChild(competenciesList);
+    pdfSection.appendChild(aboutContent);
+}
+
+
+// Process Experience section
+function processExperienceSection(originalSection, pdfSection) {
+    const timelineItems = originalSection.querySelectorAll('.timeline-item');
+
+    timelineItems.forEach(item => {
+        const title = item.querySelector('.timeline-title')?.textContent || '';
+        const company = item.querySelector('.timeline-subtitle')?.textContent || '';
+        const location = item.querySelector('.timeline-location')?.textContent || '';
+        const date = item.querySelector('.timeline-date')?.textContent || '';
+
+        const container = document.createElement('div');
+        container.style.marginBottom = "15px";
+        container.style.fontSize = "9pt";
+
+        const header = document.createElement('div');
+        header.style.display = "flex";
+        header.style.justifyContent = "space-between";
+        header.style.flexWrap = "wrap";
+        header.style.marginBottom = "3px";
+
+        const titleCompany = document.createElement('div');
+        titleCompany.innerHTML = `<strong>${title}</strong> — ${company} <em>(${location})</em>`;
+        titleCompany.style.color = "#722F37";
+        header.appendChild(titleCompany);
+
+        const dateDiv = document.createElement('div');
+        dateDiv.textContent = date;
+        dateDiv.style.fontStyle = "italic";
+        dateDiv.style.fontSize = "8pt";
+        header.appendChild(dateDiv);
+
+        container.appendChild(header);
+
+        const achievementsList = item.querySelector('.achievement-list');
+        if (achievementsList) {
+            const achievements = document.createElement('ul');
+            achievements.style.paddingLeft = "18px";
+            achievements.style.marginTop = "5px";
+            achievements.style.fontSize = "8pt";
+
+            const listItems = achievementsList.querySelectorAll('li');
+            listItems.forEach(li => {
+                const bullet = document.createElement('li');
+                bullet.innerHTML = li.innerHTML;
+                bullet.style.marginBottom = "2px";
+                achievements.appendChild(bullet);
+            });
+
+            container.appendChild(achievements);
+        }
+
+        pdfSection.appendChild(container);
+    });
+}
+
+
+// Process Education section
+function processEducationSection(originalSection, pdfSection) {
+    // Education
+    const educationHeader = document.createElement('h3');
+    educationHeader.textContent = "Education";
+    educationHeader.style.fontSize = "10pt";
+    educationHeader.style.color = "#722F37";
+    educationHeader.style.marginBottom = "5px";
+    pdfSection.appendChild(educationHeader);
+    
+    // Find education cards
+    const educationCards = originalSection.querySelectorAll('h3:first-of-type + .card, h3:first-of-type + .card + .card');
+    
+    const educationList = document.createElement('div');
+    educationCards.forEach(card => {
+        const educationItem = document.createElement('div');
+        educationItem.style.marginBottom = "8px";
+        
+        const degree = card.querySelector('.card-title');
+        const school = card.querySelector('.card-subtitle');
+        const year = card.querySelector('.card-meta span');
+        
+        const degreeText = document.createElement('div');
+        degreeText.style.fontWeight = "bold";
+        degreeText.style.fontSize = "9pt";
+        degreeText.textContent = degree ? degree.textContent : '';
+        educationItem.appendChild(degreeText);
+        
+        const details = document.createElement('div');
+        details.style.fontSize = "8pt";
+        details.style.display = "flex";
+        details.style.justifyContent = "space-between";
+        
+        const schoolText = document.createElement('span');
+        schoolText.textContent = school ? school.textContent : '';
+        
+        const yearText = document.createElement('span');
+        yearText.style.fontStyle = "italic";
+        yearText.textContent = year ? year.textContent : '';
+        
+        details.appendChild(schoolText);
+        details.appendChild(yearText);
+        educationItem.appendChild(details);
+        
+        educationList.appendChild(educationItem);
+    });
+    pdfSection.appendChild(educationList);
+    
+    // Certifications
+    const certificationsHeader = document.createElement('h3');
+    certificationsHeader.textContent = "Professional Certifications";
+    certificationsHeader.style.fontSize = "10pt";
+    certificationsHeader.style.color = "#722F37";
+    certificationsHeader.style.marginTop = "10px";
+    certificationsHeader.style.marginBottom = "5px";
+    pdfSection.appendChild(certificationsHeader);
+    
+    // Find certification cards
+    const certCards = originalSection.querySelectorAll('.card-grid .card');
+    
+    const certList = document.createElement('div');
+    certList.style.columnCount = "2";
+    certList.style.columnGap = "15px";
+    
+    certCards.forEach(card => {
+        const certItem = document.createElement('div');
+        certItem.style.marginBottom = "6px";
+        certItem.style.breakInside = "avoid";
+        
+        const cert = card.querySelector('.card-title');
+        const org = card.querySelector('.card-subtitle');
+        
+        const certText = document.createElement('div');
+        certText.style.fontWeight = "bold";
+        certText.style.fontSize = "8pt";
+        certText.textContent = cert ? cert.textContent : '';
+        certItem.appendChild(certText);
+        
+        if (org) {
+            const orgText = document.createElement('div');
+            orgText.style.fontSize = "8pt";
+            orgText.textContent = org.textContent;
+            certItem.appendChild(orgText);
+        }
+        
+        certList.appendChild(certItem);
+    });
+    pdfSection.appendChild(certList);
+}
+
+// Process Skills section
+function processSkillsSection(originalSection, pdfSection) {
+    const skillCards = originalSection.querySelectorAll('.card');
+    
+    const skillsContainer = document.createElement('div');
+    skillsContainer.style.columnCount = "2";
+    skillsContainer.style.columnGap = "15px";
+    
+    skillCards.forEach(card => {
+        const skillItem = document.createElement('div');
+        skillItem.style.marginBottom = "8px";
+        skillItem.style.breakInside = "avoid";
+        
+        const skillName = card.querySelector('.card-title');
+        const skillLevel = card.querySelector('.card-subtitle');
+        const skillDesc = card.querySelector('.card-meta p');
+        
+        const nameRow = document.createElement('div');
+        nameRow.style.display = "flex";
+        nameRow.style.justifyContent = "space-between";
+        nameRow.style.alignItems = "center";
+        
+        const nameSpan = document.createElement('span');
+        nameSpan.style.fontWeight = "bold";
+        nameSpan.style.fontSize = "9pt";
+        nameSpan.style.color = "#722F37";
+        nameSpan.textContent = skillName ? skillName.textContent : '';
+        
+        const levelSpan = document.createElement('span');
+        levelSpan.style.fontSize = "8pt";
+        levelSpan.style.fontStyle = "italic";
+        levelSpan.textContent = skillLevel ? skillLevel.textContent.replace("proficiency", "") : '';
+        
+        nameRow.appendChild(nameSpan);
+        nameRow.appendChild(levelSpan);
+        skillItem.appendChild(nameRow);
+        
+        if (skillDesc) {
+            const descText = document.createElement('div');
+            descText.style.fontSize = "8pt";
+            descText.textContent = skillDesc.textContent;
+            skillItem.appendChild(descText);
+        }
+        
+        skillsContainer.appendChild(skillItem);
+    });
+    
+    pdfSection.appendChild(skillsContainer);
+}
+
+// Process Languages section
+function processLanguagesSection(originalSection, pdfSection) {
+    const languageCards = originalSection.querySelectorAll('.language-card');
+    
+    const languageList = document.createElement('div');
+    languageList.style.display = "flex";
+    languageList.style.flexWrap = "wrap";
+    languageList.style.gap = "20px";
+    languageList.style.justifyContent = "flex-start";
+    
+    languageCards.forEach(card => {
+        const languageItem = document.createElement('div');
+        languageItem.style.display = "flex";
+        languageItem.style.alignItems = "center";
+        languageItem.style.marginBottom = "5px";
+        
+        const name = card.querySelector('.language-name');
+        const level = card.querySelector('.level-text');
+        
+        const nameSpan = document.createElement('span');
+        nameSpan.style.fontWeight = "bold";
+        nameSpan.style.fontSize = "9pt";
+        nameSpan.style.marginRight = "10px";
+        nameSpan.textContent = name ? name.textContent : '';
+        
+        const levelSpan = document.createElement('span');
+        levelSpan.style.fontSize = "9pt";
+        levelSpan.textContent = level ? `(${level.textContent})` : '';
+        
+        languageItem.appendChild(nameSpan);
+        languageItem.appendChild(levelSpan);
+        
+        languageList.appendChild(languageItem);
+    });
+    
+    pdfSection.appendChild(languageList);
+}
+</script>
+
+    <script>
+    document.getElementById('generate-pdf').addEventListener('click', function() {
+        // Get selected sections
+        const selectedSections = Array.from(
+            document.querySelectorAll('input[name="sections"]:checked')
+        ).map(checkbox => checkbox.value);
+        
+        // Create a container for the PDF content
+        const pdfContent = document.createElement('div');
+        pdfContent.style.padding = "20px";
+        
+        // Add a header with basic info
+        const headerDiv = document.createElement('div');
+        headerDiv.style.textAlign = "center";
+        headerDiv.style.marginBottom = "20px";
+        
+        const nameH1 = document.createElement('h1');
+        nameH1.textContent = "NITRO WONG";
+        nameH1.style.marginBottom = "5px";
+        
+        const titleDiv = document.createElement('div');
+        titleDiv.textContent = "Vice President - Goodlins Group";
+        titleDiv.style.fontSize = "16px";
+        titleDiv.style.marginBottom = "5px";
+        
+        const contactDiv = document.createElement('div');
+        contactDiv.innerHTML = "nitro.wong@me.com | +852 9483 5453 / +886 0909 590 581 | Taipei, Taiwan";
+        contactDiv.style.fontSize = "14px";
+        
+        headerDiv.appendChild(nameH1);
+        headerDiv.appendChild(titleDiv);
+        headerDiv.appendChild(contactDiv);
+        pdfContent.appendChild(headerDiv);
+        
+        // Add horizontal rule
+        const hr = document.createElement('hr');
+        hr.style.margin = "20px 0";
+        pdfContent.appendChild(hr);
+        
+        // Add each selected section
+        selectedSections.forEach(sectionId => {
+            const originalSection = document.getElementById(sectionId);
+            
+            // Create a new section to add to PDF
+            const newSection = document.createElement('div');
+            newSection.style.marginBottom = "30px";
+            
+            // Add the section title
+            const title = originalSection.querySelector('.section-title').cloneNode(true);
+            title.style.fontSize = "18px";
+            title.style.fontWeight = "bold";
+            title.style.marginBottom = "15px";
+            title.style.color = "#722F37"; // Using your primary color
+            newSection.appendChild(title);
+            
+            // Add the section content (excluding the title)
+            const content = originalSection.innerHTML;
+            const contentDiv = document.createElement('div');
+            contentDiv.innerHTML = content.replace(/<h2.*?<\/h2>/s, ''); // Remove the title
+            newSection.appendChild(contentDiv);
+            
+            pdfContent.appendChild(newSection);
+        });
+        
+        // Generate the PDF
+        html2pdf().from(pdfContent)
+            .set({
+                margin: [15, 15, 15, 15],
+                filename: 'Nitro_Wong_CV_Custom.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            })
+            .save();
+    });
+</script>
+
 </body>
 </html>             
         </section>
