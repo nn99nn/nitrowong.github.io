@@ -1226,7 +1226,7 @@ pdfContent.style.marginTop = "-25px";
     // Add a header with basic info
     const headerDiv = document.createElement('div');
     headerDiv.style.textAlign = "center";
-    headerDiv.style.margin = "0";
+    headerDiv.style.margin = "-5";
     headerDiv.style.padding = "0";
     
     const nameH1 = document.createElement('h1');
@@ -1311,7 +1311,6 @@ pdfContent.style.marginTop = "-25px";
         .set({
             margin: [10, 10, 10, 10],
             filename: 'Nitro_Wong_CV_Custom.pdf',
-            image: { type: 'jpeg', quality: 0.95 },
             html2canvas: { scale: 2, logging: false },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
         })
@@ -1611,7 +1610,8 @@ function processLanguagesSection(originalSection, pdfSection) {
         // Add a header with basic info
         const headerDiv = document.createElement('div');
         headerDiv.style.textAlign = "center";
-        headerDiv.style.marginBottom = "20px";
+                headerDiv.style.marginTop = "-560px";
+        headerDiv.style.marginBottom = "1px";
         
         const nameH1 = document.createElement('h1');
         nameH1.textContent = "NITRO WONG";
@@ -1644,14 +1644,6 @@ function processLanguagesSection(originalSection, pdfSection) {
             const newSection = document.createElement('div');
             newSection.style.marginBottom = "30px";
             
-            // Add the section title
-            const title = originalSection.querySelector('.section-title').cloneNode(true);
-            title.style.fontSize = "18px";
-            title.style.fontWeight = "bold";
-            title.style.marginBottom = "15px";
-            title.style.color = "#722F37"; // Using your primary color
-            newSection.appendChild(title);
-            
             // Add the section content (excluding the title)
             const content = originalSection.innerHTML;
             const contentDiv = document.createElement('div');
@@ -1664,9 +1656,8 @@ function processLanguagesSection(originalSection, pdfSection) {
         // Generate the PDF
         html2pdf().from(pdfContent)
             .set({
-                margin: [15, 15, 15, 15],
+                margin: [0, 15, 0, 15],
                 filename: 'Nitro_Wong_CV_Custom.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2 },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
             })
